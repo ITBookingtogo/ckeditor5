@@ -68,7 +68,6 @@ ClassicEditor.builtinPlugins = [
 	Underline,
 	Font,
 	WordCount,
-	MediaEmbedToolbar
 ];
 
 // Editor configuration.
