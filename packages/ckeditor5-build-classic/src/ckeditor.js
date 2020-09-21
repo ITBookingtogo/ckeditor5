@@ -29,6 +29,12 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
+import MediaEmbedToolbar from '@ckeditor/ckeditor5-media-embed/src/mediaembedtoolbar.js';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -56,7 +62,13 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	Alignment,
+	IndentBlock,
+	Underline,
+	Font,
+	WordCount,
+	MediaEmbedToolbar
 ];
 
 // Editor configuration.
@@ -79,7 +91,11 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'alignment',
+			'underline',
+			'fontSize',
+			'fontColor'
 		]
 	},
 	image: {
