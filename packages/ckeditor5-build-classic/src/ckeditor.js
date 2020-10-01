@@ -34,6 +34,7 @@ import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import MediaEmbedToolbar from '@ckeditor/ckeditor5-media-embed/src/mediaembedtoolbar.js';
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -68,6 +69,7 @@ ClassicEditor.builtinPlugins = [
 	Underline,
 	Font,
 	WordCount,
+	ImageResize
 ];
 
 // Editor configuration.
